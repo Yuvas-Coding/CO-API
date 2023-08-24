@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    username: root
+    password: mani@1234
+    url: jdbc:mysql://localhost:3307/his
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update 
+    mvc:
+     pathmatch:
+       matching-strategy: ant_path_matcher
+     properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
+  mail:
+    host: smtp.gmail.com
+    username: dropteja.vtalent@gmail.com 
+    password: tmgcnxphfgakvuqj
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+
